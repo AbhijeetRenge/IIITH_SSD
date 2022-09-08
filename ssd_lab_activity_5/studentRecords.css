@@ -1,0 +1,47 @@
+h1{
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom:3% ;
+    font-family:Arial;
+}
+.content{
+    margin: auto;
+    text-align: center;
+    font-family: Arial;
+}
+
+#add{
+    background-color: green;
+    width: 6%;
+    padding: 10px;
+}
+#delete{
+    background-color: red;
+    width: 10%;
+    padding: 10px;
+}
+table,td,tr,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: auto;
+    padding-left: 80px;
+    padding-right: 94px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: Arial;
+    border-radius: 4px;
+}
+th{
+    background-color: floralwhite;
+}
+tr:nth-child(odd){
+    background-color: azure;
+}
+tr:nth-child(even){
+    background-color: rgb(220, 255, 245);
+}
+html{
+    height: 100%;
+    background-image: linear-gradient(to bottom right,honeydew,ghostwhite,grey);
+
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="studentRecords.css">
+    
+</head>
+<body>
+    
+    <div class="content">
+        <h1>Student Records </h1>
+    <input type="text" placeholder="Roll no" id="roll_no">
+    <input type="text" placeholder="Name" id="Sname">
+    <button type="submit" onclick="addElement()"  id="add"> Add New</button><br><br>
+    <table id="Records_table">
+        <tr>
+            <th>Roll No.</th>
+            <th>Name</th>
+        </tr>
+    </table>
+    <br>
+    <button type="submit" onclick="deleteElement()" id="delete" > Delete Last Entry</button>
+    </div>
+
+    <script>
+        function addElement(){
+            var table=document.getElementById("Records_table");
+            var new_row=table.insertRow();
+            var rno=document.getElementById("roll_no").value;
+            document.getElementById("roll_no").value="";
+            var sname=document.getElementById("Sname").value;
+            document.getElementById("Sname").value="";
+            var col1=new_row.insertCell(0);
+            console.log(rno);
+            console.log(sname)
+            var col2= new_row.insertCell(1);
+            col1.innerHTML=rno;
+            
+            col2.innerHTML=sname;
+        }
+        function deleteElement(){
+        
+            document.getElementById("Records_table").deleteRow(-1);
+            
+        }
+    </script>
+</body>
+</html>
